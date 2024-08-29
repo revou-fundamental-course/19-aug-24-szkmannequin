@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AssignmentRevou</title>
+        <link rel="stylesheet" href="CSS\styles.css">
+    </head>
+    <body>
+        <!-- Navigasi -->
+        <nav id="navbar">
+            <header>
+                <div class="logo_icon"></div>
+            </header>
+            <section class="nav_section">
+                <a class="nav_item" href="#home_slide">Home</a>
+                <a class="nav_item" href="#profile_slide">Our Profile</a>
+                <a class="nav_item" href="#achievement_slide">Achievement</a>
+                <a class="nav_item" href="#massage_slide">Message US</a>
+            </section>
+        </nav>
+
+        <!-- Article -->
+        <article id="home_slide" class="MainArticle">
+            <header>
+                <h1 class="FontArticle">
+                    Hi <span id="name">Guest</span>, Welcome to Revou
+                </h1>
+            </header>
+            <p class="FontArticle">Ini adalah website Testing</p>
+            <div class="MainArticle_Banner_Container">
+                <div class="MainArticle_Banner_Content banner-1"></div>
+                <div class="MainArticle_Banner_Content banner-2"></div>
+                <div class="MainArticle_Banner_Content banner-3"></div>
+            </div>
+        </article>
+
+        <!-- Our Profile -->
+        <section id="profile_slide">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <section class="profile_container">
+                <div class="profile_item">
+                    <div class="profile_img"></div>
+                    <h3>Electronic Engineering</h3>
+                </div>
+                <div class="profile_item">
+                    <div class="profile_img"></div>
+                    <h3>Industrial Engineering</h3>
+                </div>
+                <div class="profile_item">
+                    <div class="profile_img"></div>
+                    <h3>SCADA Engineer</h3>
+                </div>
+            </section>
+        </section>
+
+        <!-- Achievement -->
+        <section id="achievement_slide">
+            <header>
+                <h1>Achievement</h1>
+            </header>
+
+            <section class="profile_container">
+                <div class="profile_item">
+                    <div class="html_img"></div>
+                    <h3>Intermediate html</h3>
+                </div>
+                <div class="profile_item">
+                    <div class="css_img"></div>
+                    <h3>Intermediate CSS</h3>
+                </div>
+                <div class="profile_item">
+                    <div class="java_img"></div>
+                    <h3>Intermediate Javascript</h3>
+                </div>
+            </section>
+        </section>
+
+        <!-- Massage US -->
+        <section  id="massage_slide" class="MassageUS_Container">
+            <form class="form_MassageUS">
+                <h1>Message US</h1>
+                <div class="Form_row">
+                    <div class="row_label">
+                        <label class="Label_standard" for="input_name">Nama</label>
+                    </div>
+                    <div class="row_input">
+                        <a>:</a>
+                        <input class="input_standar" type="text" name="input_name" id="input-name" placeholder="name"/>
+                    </div>
+                </div>
+
+                <div class="Form_row">
+                    <div class="row_label">
+                        <label class="Label_standard" for="input-Date">Tanggal Lahir</label>
+                    </div>
+                    <div class="row_input">
+                        <a>:</a>
+                        <input class="input_standar" type="date" name="input_Date" id="input-Date" placeholder="date"/>
+                    </div>
+                </div>
+
+                <div class="Form_row">
+                    <div class="row_label">
+                        <Label class="Label_standard" for="input-gender">Jenis Kelamin</Label>
+                    </div>
+                    <div class="row_input">
+                        <a>:</a>
+                        <input type="radio" name="input_gender" value="Laki-Laki" unchecked/> Laki-Laki
+                        <input type="radio" name="input_gender" value="Perempuan" unchecked/> Perempuan 
+                    </div>
+                </div>
+
+                <div class="Form_row">
+                    <div class="row_label">
+                        <label class="Label_standard" for="input-Pesan">Pesan</label>
+                    </div>
+                    <div class="row_input">
+                        <textarea class="input_standar" name="input-Pesan" id="input-Pesan" rows="4" cols="23" placeholder="pesan"></textarea>
+                    </div>
+                </div>
+                <button type="button" class="Button_style">Submit</button>
+            </form>
+
+            <div class="comment_container center_display">
+                <h1>Message :</h1>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+           <p>Made by Salman Althof</p>
+        </footer>
+        <script src="js\script.js"></script>
+    </body>
 </html>
